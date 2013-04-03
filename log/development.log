@@ -8024,3 +8024,512 @@ Served asset /application.css - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 14:56:03 -0400
 Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 16:59:56 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 102ms (Views: 101.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 16:59:56 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 16:59:56 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:00:30 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.js  (0ms)  (pid 4456)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:00:30 -0400
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:00:30 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:00:59 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Compiled application.js  (0ms)  (pid 4456)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:00:59 -0400
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:00:59 -0400
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:01:17 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:01:17 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:01:17 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:01:52 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Compiled application.js  (0ms)  (pid 4456)
+Completed 200 OK in 25ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:01:52 -0400
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:01:52 -0400
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:02:04 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:02:04 -0400
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:02:04 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:02:59 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.4ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 11ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:02:59 -0400
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:02:59 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:03:12 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 29ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:03:12 -0400
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:03:12 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:03:18 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 17ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:03:18 -0400
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:03:18 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:03:28 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:03:28 -0400
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:03:28 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:04:59 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Compiled application.js  (0ms)  (pid 4456)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:05:00 -0400
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:05:00 -0400
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:05:18 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 8ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:05:18 -0400
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:05:18 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:05:28 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 8ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:05:29 -0400
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:05:29 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:05:37 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 14ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:05:37 -0400
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:05:37 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:05:46 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:05:46 -0400
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:05:46 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:05:49 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 31ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:05:49 -0400
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:05:49 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:06:01 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:06:01 -0400
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:06:01 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:06:08 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:06:08 -0400
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:06:08 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:06:26 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:06:26 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:06:26 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:06:46 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 77ms (Views: 76.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:06:46 -0400
+Served asset /application.css - 200 OK (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:06:46 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:06:52 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:06:52 -0400
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:06:52 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:06:57 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 35ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:06:57 -0400
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:06:57 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:07:17 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:07:17 -0400
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:07:17 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:07:21 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 10ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:07:21 -0400
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:07:21 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:07:26 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:07:27 -0400
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:07:27 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:07:33 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 41ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:07:33 -0400
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:07:33 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:07:40 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:07:40 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:07:40 -0400
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:07:53 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 16ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:07:53 -0400
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:07:53 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:07:57 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 25ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:07:57 -0400
+Served asset /application.css - 200 OK (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:07:57 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:08:11 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 26ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:08:11 -0400
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:08:11 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:08:49 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:08:49 -0400
+Served asset /application.css - 200 OK (14ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:08:49 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:09:08 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 4456)
+Completed 200 OK in 29ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:09:08 -0400
+Served asset /application.css - 200 OK (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:09:08 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:09:37 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:09:37 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:09:37 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 17:09:50 -0400
+Processing by ChooseController#index as HTML
+  Rendered choose/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 17:09:50 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 17:09:50 -0400
+Served asset /application.js - 304 Not Modified (0ms)

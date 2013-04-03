@@ -201,6 +201,9 @@ header h2 a:after {
 }
 .main .info, .main .info h2 {
 	text-align:left;
+	padding:0;
+}
+.main .info {
 	padding:0 0 1em;
 }
 .main .info p {
@@ -343,10 +346,36 @@ input[type=submit]:active {
 	padding:.8em 0 .7em;
 	box-shadow:0 1px 3px rgba(0,0,0,0.2) inset, 0 1px 10px 0 rgba(0,0,0,0.1) inset;
 }
+.main form h2 {
+	text-align:left;
+	margin:0 0 .75em;
+}
 .main form h3 {
 	color:red;
 	font-size:1em;
 	padding:0 0 1em;
+}
+
+.donate label {
+	float:left;
+	margin:0 .75em 0 0;
+	display:inline-block;
+	background:#E9A900;
+	color:white;
+	line-height:1;
+	padding:.35em .5em;
+	cursor:pointer;
+	outline:2px solid rgba(0,0,0,0.075);
+	text-shadow:0 1px 0 rgba(0,0,0,0.075), 0 2px 1px rgba(0,0,0,0.05), 0 3px 2px rgba(0,0,0,0.025);
+}
+.donate label:active {
+	opacity:.75;
+}
+.donate label.selected {
+	background:#00B7BF;
+}
+.donate label input {
+	display:none;
 }
 
 .payment {
@@ -365,6 +394,11 @@ input[type=submit]:active {
 	background-size:cover;
 	z-index:1;
 	display:table;
+}
+.half.show {
+	-webkit-filter:opacity(0.75);
+	-moz-filter:opacity(0.75);
+	filter:opacity(0.75);
 }
 
 @media screen and (min-width:40em){

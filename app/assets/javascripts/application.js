@@ -24,6 +24,7 @@ $(function(){
 	var $input_cc = $('.n input');
 	var $submit = $('#submit');
 	var $errors = '<h3>Please correct these errors first.</h3>';
+	var $radio = $('input[type=radio]');
 
 	$select_span.on('click',function(){
 		$select.find('.intro').toggleClass('hide');
@@ -46,7 +47,7 @@ $(function(){
 		$selects.removeClass('selected');
 		$this.addClass('selected');
 		$select.removeClass('show');
-		$half.css('background-image','url('+$this_image+')');
+		$half.css('background-image','url('+$this_image+')').addClass('show');
 		$charity.text($this_charity);
 		$payment.addClass('show');
 	});
@@ -100,6 +101,12 @@ $(function(){
 
 		//alert($this_num.length);
 
+	});
+
+	$radio.on('click',function(){
+		var $this = $(this);
+		$radio.parent().removeClass('selected');
+		$this.parent().addClass('selected');
 	});
 
 });
