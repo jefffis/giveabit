@@ -1,4 +1,7 @@
 Giveabit::Application.routes.draw do
+
+  root :to => 'choose#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

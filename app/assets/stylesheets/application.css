@@ -9,5 +9,255 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
  */
+
+/*! normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
+.snippet,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html,button,input,select,textarea{font-family:'Arimo', 'Helvetica Neue', Arial, sans-serif;}body{margin:0}a:focus{outline:thin dotted}a:hover,a:active{outline:0}h1{font-size:2em;margin:.67em 0}h2{font-size:1.5em;margin:.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.33em 0}h5{font-size:.83em;margin:1.67em 0}h6{font-size:.75em;margin:2.33em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}blockquote{margin:1em 40px}dfn{font-style:italic}mark{background:#ff0;color:#000}p,pre{margin:1em 0}pre,code,kbd,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:'';content:none}small{font-size:75%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}dl,menu,ol,ul{margin:1em 0}dd{margin:0 0 0 40px}menu,ol,ul{padding:0 0 0 40px}nav ul,nav ol{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal;*margin-left:-7px}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;*overflow:visible}button[disabled],input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+* {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+::selection {
+	background:#E9A900;
+	color:white;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:#E9A900;
+	color:white;
+	text-shadow:none;
+}
+html {
+	height:100%;
+	min-height:100%;
+	width:100%;
+	font:100%/1.5 'Helvetica Neue', Arial, sans-serif;
+	overflow:auto;
+	line-height:1.5;
+	color:white;
+	background:#00B7BF;
+	position:relative;
+	letter-spacing:normal;
+	text-shadow:0 1px 0 rgba(0,0,0,0.075), 0 2px 1px rgba(0,0,0,0.05), 0 3px 2px rgba(0,0,0,0.025);
+}
+body {
+	width:100%;
+	height:100%;
+	display:table;
+	padding:2em 0;
+}
+.wrap {
+	width:100%;
+	height:100%;
+	display:table-cell;
+	vertical-align:middle;
+}
+h1, h2, h3 {
+	line-height:1.1;
+}
+h1 { font-size:2.5em; }
+h2 { font-size:2em; }
+h3 { font-size:1.5em; }
+
+h1, h2, h3, h4, p {
+	margin:0 0 .65em;
+}
+
+.cf:before, .cf:after, header:before, header:after { content:""; display:table; }
+.cf:after, .clear, header:after { clear:both; }
+.cf, header { *zoom:1; }
+
+a {
+	color:white;
+}
+
+header, .main {
+	width:100%;
+	padding:0 2em;
+	position:relative;
+	z-index:2;
+}
+header, header * {
+	text-align:center;
+	text-decoration:none;
+	margin:0;
+}
+header h2 {
+	margin:0 0 .75em;
+}
+header h2 a:after {
+	content:"";
+	display:inline-block;
+	position:relative;
+	left:8px;
+	height:.8em;
+	width:.8em;
+	background:white;
+	opacity:.5;
+	box-shadow:0 1px 0 rgba(0,0,0,0.075), 0 2px 1px rgba(0,0,0,0.05), 0 3px 2px rgba(0,0,0,0.025);
+}
+
+.main ul {
+	height:3em;
+	overflow:hidden;
+	margin:1em 0;
+	padding:0;
+	outline:5px solid rgba(255,255,255,0.2);
+	position:relative;
+}
+.main ul span {
+	position:absolute;
+	right:0;
+	top:0;
+	display:block;
+	background:rgba(0,0,0,0.1);
+	height:3em;
+	width:3em;
+	cursor:pointer;
+}
+.main ul span:hover {
+	background:rgba(0,0,0,0.2);
+}
+.main ul span:active {
+	background:rgba(0,0,0,0.5);
+	color:rgba(255,255,255,0.75);
+}
+.main ul span:before, .main ul span:after {
+	content:"";
+	display:block;
+	position:absolute;
+	right:1em;
+	border-left:8px solid transparent;
+	border-right:8px solid transparent;
+}
+.main ul span:before {
+	border-top:8px solid white;
+	top:1.6em;
+}
+.main ul span:after {
+	border-bottom:8px solid white;
+	top:.9em;
+}
+.main ul.show {
+	height:auto;
+	overflow:visible;
+}
+.main ul.show span {
+	top:-2.1em;
+	right:-.3em;
+	color:white;
+	height:1.5em;
+	width:1.5em;
+	text-align:center;
+}
+.main ul.show span:before {
+	content:"\2717";
+	border:0;
+	top:-.1em;
+	right:.5em;
+}
+.main ul.show span:after {
+	display:none;
+}
+.main li {
+	list-style:none;
+	padding:1em;
+	background:rgba(0,0,0,0.1);
+	line-height:1;
+	font-weight:bold;
+	cursor:pointer;
+	display:none;
+}
+.main li.selected, .main .show li {
+	display:list-item;
+}
+.main li:hover {
+	background:rgba(0,0,0,0.2);
+}
+.main li:active {
+	background:rgba(0,0,0,0.5);
+	color:rgba(255,255,255,0.75);
+}
+.main h2 {
+	text-align:center;
+	font-size:1.15em;
+	font-weight:normal;
+	opacity:.7;
+	margin:1.5em 0 0;
+}
+.main form {
+	margin:1em 0;
+}
+.main form * {
+	padding:0;
+	margin:0;
+	border:0;
+}
+.main label span {
+	display:none;
+}
+.search input[type=text], .search input[type=search] {
+	border:0;
+	width:100%;
+	background:none;
+	text-align:center;
+	font-size:1.15em;
+	font-weight:normal;
+	opacity:.7;
+	margin:1em 0 0;
+	padding:.75em 0;
+	color:white;
+	outline:none;
+}
+::-webkit-input-placeholder {
+	color:white;
+}
+::-moz-input-placeholder {
+	color:white;
+}
+::input-placeholder {
+	color:white;
+}
+.search input:focus, .search input.show {
+	opacity:1;
+	background:rgba(0,0,0,0.2);
+	outline:5px solid rgba(255,255,255,0.2);
+}
+.payment {
+	display:none;
+}
+.half {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:#E9A900 url(http://oculusdirect.com/blog/wp-content/uploads/2012/10/charity11.jpg) no-repeat top left;
+	background-size:cover;
+	z-index:1;
+}
+
+@media screen and (min-width:45em){
+	header, .main {
+		width:35em;
+		margin:0 auto;
+		padding:0;
+	}
+	.main ul, .main form {
+		width:100%;
+		margin:1em auto;
+	}
+}
+@media screen and (min-height:20em){
+	body {
+		padding:0;
+	}
+	.main ul {
+		background:#00B7BF;
+	}
+	.half {
+		height:49%;
+		box-shadow:0 -5px 0 rgba(0,0,0,0.1) inset;
+	}
+}
