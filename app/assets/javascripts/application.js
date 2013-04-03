@@ -92,9 +92,13 @@ $(function(){
 		if($first=='4'){
 			$this.parent().addClass('cc visa');
 		}
-		if(($first=='4') && ($this_num.length != 16)) {
+		if(($first=='4') && ($this_num.length == 16)) {
+			$this.removeClass('fix-me invalid');
+		} else {
 			$this.addClass('fix-me invalid');
 		}
+
+		//alert($this_num.length);
 
 	});
 

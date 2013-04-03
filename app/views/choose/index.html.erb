@@ -5,13 +5,14 @@
 	<div class="main" role="main">
 		<ul id="select">
 			<li data-intro="yes" class="selected intro">Choose a Charity:</li>
-			<li data-img="http://actok.org/wp-content/uploads/2012/10/Charity-Water-in-Ethiopia-Scribblybark.com_.au_.jpg">Charity Name2</li>
-			<li data-img="http://www.google.com/nonprofits/images/charity-water-large.jpg">Charity Name3</li>
-			<li data-img="http://diveintampabay.com/wp-content/uploads/2012/07/charity2.jpg">Charity Name4</li>
-			<li data-img="http://rack.3.mshcdn.com/media/ZgkyMDEyLzEyLzIwL2Y3L2dpdmVjaGFyaXR5Ljk0YzY2LmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/a9aa7a20/73e/give-charity-donations.jpg">Charity Name5</li>
+			<li data-img="http://www.google.com/nonprofits/images/charity-water-large.jpg">Some Charity</li>
+			<li data-img="http://actok.org/wp-content/uploads/2012/10/Charity-Water-in-Ethiopia-Scribblybark.com_.au_.jpg">Charity Name</li>
+			<li data-img="http://www.google.com/nonprofits/images/charity-water-large.jpg">Another Charity</li>
+			<li data-img="http://diveintampabay.com/wp-content/uploads/2012/07/charity2.jpg">Ever More Charity</li>
+			<li data-img="http://rack.3.mshcdn.com/media/ZgkyMDEyLzEyLzIwL2Y3L2dpdmVjaGFyaXR5Ljk0YzY2LmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/a9aa7a20/73e/give-charity-donations.jpg">Donate to Me</li>
 			<span></span>
 		</ul>
-		<form action="" method="" id="payment" class="">
+		<form action="" method="" id="payment" class="show">
 			<div class="info">
 				<h2>Charity: <strong id="charity"></strong></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, voluptatum inventore non earum sequi minus molestiae atque odit ipsum cumque! Alias nobis laborum rem ipsa tempore facilis asperiores. <a href="">Provident, harum</a>!</p>
@@ -22,6 +23,16 @@
 				</label>
 			</fieldset>-->
 			<div class="payment">
+				<fieldset class="donate">
+					<label for="d2">
+						$2
+						<input type="radio" name="donation_amount" id="d2" value="$2.00" />
+					</label>
+					<label for="d3">
+						$3
+						<input type="radio" name="donation_amount" id="d3" value="$3.00" />
+					</label>
+				</fieldset>
 				<fieldset>
 					<label for="field1"><span>Name</span>
 						<input type="text" value="" name="field1" class="invalid" />
