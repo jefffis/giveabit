@@ -69,7 +69,8 @@ h1, h2, h3, h4, p {
 .cf, header { *zoom:1; }
 
 a {
-	color:white;
+	color:#E9A900;
+	font-weight:bold;
 }
 
 header, .main {
@@ -82,6 +83,7 @@ header, header * {
 	text-align:center;
 	text-decoration:none;
 	margin:0;
+	color:white;
 }
 header h2 {
 	margin:0 0 .75em;
@@ -111,13 +113,13 @@ header h2 a:after {
 	right:0;
 	top:0;
 	display:block;
-	background:rgba(0,0,0,0.1);
+	background:rgba(0,0,0,0.2);
 	height:3em;
 	width:3em;
 	cursor:pointer;
 }
 .main ul span:hover {
-	background:rgba(0,0,0,0.2);
+	background:rgba(0,0,0,0.35);
 }
 .main ul span:active {
 	background:rgba(0,0,0,0.5);
@@ -150,6 +152,7 @@ header h2 a:after {
 	height:1.5em;
 	width:1.5em;
 	text-align:center;
+	display:none;
 }
 .main ul.show span:before {
 	content:"\2717";
@@ -160,10 +163,10 @@ header h2 a:after {
 .main ul.show span:after {
 	display:none;
 }
-.main li {
+.main li, .main .show li.hide {
 	list-style:none;
 	padding:1em;
-	background:rgba(0,0,0,0.1);
+	background:rgba(0,0,0,0.2);
 	line-height:1;
 	font-weight:bold;
 	cursor:pointer;
@@ -173,7 +176,7 @@ header h2 a:after {
 	display:list-item;
 }
 .main li:hover {
-	background:rgba(0,0,0,0.2);
+	background:rgba(0,0,0,0.35);
 }
 .main li:active {
 	background:rgba(0,0,0,0.5);
@@ -187,17 +190,40 @@ header h2 a:after {
 	margin:1.5em 0 0;
 }
 .main form {
-	margin:1em 0;
+	margin:2em 0;
+	padding:1.5em;
+	background:white;
+	outline:5px solid rgba(0,0,0,0.2);
+	text-align:center;
+	color:#333;
+	text-shadow:none;
+	display:none;
+}
+.main .info, .main .info h2 {
+	text-align:left;
+	padding:0 0 1em;
+}
+.main .info p {
+	opacity:.75;
+	font-size:90%;
+	margin-bottom:.5em;
+}
+.main form.show {
+	display:block;
 }
 .main form * {
 	padding:0;
 	margin:0;
 	border:0;
 }
-.main label span {
+.main form p {
+	opacity:.5;
+}
+
+.search, .search span {
 	display:none;
 }
-.search input[type=text], .search input[type=search] {
+.search input[type=text], .search input[type=search], input[type=text], input[type=submit] {
 	border:0;
 	width:100%;
 	background:none;
@@ -207,10 +233,9 @@ header h2 a:after {
 	opacity:.7;
 	margin:1em 0 0;
 	padding:.75em 0;
-	color:white;
 	outline:none;
 }
-::-webkit-input-placeholder {
+/*::-webkit-input-placeholder {
 	color:white;
 }
 ::-moz-input-placeholder {
@@ -218,14 +243,117 @@ header h2 a:after {
 }
 ::input-placeholder {
 	color:white;
-}
+}*/
 .search input:focus, .search input.show {
 	opacity:1;
 	background:rgba(0,0,0,0.2);
-	outline:5px solid rgba(255,255,255,0.2);
+	outline:none;
 }
-.payment {
+
+.main fieldset {
+	margin:0 0 1.5em;
+	position:relative;
+}
+.main label span {
+	position:absolute;
+	left:1em;
+	top:.95em;
+	line-height:1.2;
+	opacity:.75;
+	border-right:5px solid #ccc;
+	width:70px;
+	text-align:left;
+}
+.main small {
+	display:block;
+	text-align:left;
+	margin:1em 0 0;
+	line-height:1;
+	padding:0 0 0 1em;
+	border-left:1px solid #ccc;
+	opacity:.75;
+	font-weight:bold;
+}
+input[type=text], input[type=submit] {
+	background:rgba(0,0,0,0.1);
+	margin:0;
+	outline:none;
+	position:relative;
+	padding-left:100px;
+	text-align:left;
+}
+input[type=submit] {
+	text-align:center;
+	background:#E9A900;
+	padding:.75em 0;
+	color:#B52C02;
+	font-weight:bold;
+}
+input[type=text]:focus {
+	outline:5px solid #00B7BF;
+}
+input[type=text].good {
+	outline:5px solid #9CE2E6;
+}
+input[type=text].fix-me {
+	outline:5px solid red;
+}
+label.cc {
+	position:relative;
+}
+label.cc span {
+	top:0;
+}
+label.cc:after {
+	content:"";
+	height:15px;
+	width:26px;
+	background:#00B7BF;
+	position:absolute;
+	right:1em;
+	top:.2em;
+	font-size:10px;
+	padding:2px 3px;
+	color:white;
+	font-weight:bold;
+	text-align:center;
+	border-radius:2px;
 	display:none;
+}
+label.cc.amex:after {
+	content:"amex";
+}
+label.cc.visa:after {
+	content:"visa";
+}
+label.cc.mc:after {
+	content:"mc";
+}
+label.cc.disc:after {
+	content:"disc";
+}
+input[type=submit]:hover {
+	opacity:1;
+}
+input[type=submit]:focus {
+	opacity:1;
+	outline:5px solid #00B7BF;
+}
+input[type=submit]:active {
+	padding:.8em 0 .7em;
+	box-shadow:0 1px 3px rgba(0,0,0,0.2) inset, 0 1px 10px 0 rgba(0,0,0,0.1) inset;
+}
+.main form h3 {
+	color:red;
+	font-size:1em;
+	padding:0 0 1em;
+}
+
+.payment {
+	display:;
+}
+.payment.show {
+	display:block;
 }
 .half {
 	position:absolute;
@@ -233,12 +361,13 @@ header h2 a:after {
 	left:0;
 	width:100%;
 	height:100%;
-	background:#E9A900 url(http://oculusdirect.com/blog/wp-content/uploads/2012/10/charity11.jpg) no-repeat top left;
+	background:#E9A900 /*url(http://oculusdirect.com/blog/wp-content/uploads/2012/10/charity11.jpg) no-repeat top left*/;
 	background-size:cover;
 	z-index:1;
+	display:table;
 }
 
-@media screen and (min-width:45em){
+@media screen and (min-width:40em){
 	header, .main {
 		width:35em;
 		margin:0 auto;
@@ -248,8 +377,21 @@ header h2 a:after {
 		width:100%;
 		margin:1em auto;
 	}
+	.main form {
+		margin:2em auto;
+	}
+	.main label span {
+		width:100px;
+	}
+	input[type=text] {
+		padding-left:130px;
+	}
+	label.cc:after {
+		display:inline-block;
+	}
 }
-@media screen and (min-height:20em){
+
+@media screen and (min-height:35em){
 	body {
 		padding:0;
 	}
@@ -257,7 +399,7 @@ header h2 a:after {
 		background:#00B7BF;
 	}
 	.half {
-		height:49%;
+		height:53%;
 		box-shadow:0 -5px 0 rgba(0,0,0,0.1) inset;
 	}
 }
