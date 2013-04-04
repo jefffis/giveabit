@@ -25,6 +25,10 @@ $(function(){
 	var $submit = $('#submit');
 	var $errors = '<h3>Please correct these errors first.</h3>';
 	var $radio = $('input[type=radio]');
+	var $details = $('#details');
+	var $donate = $('#donate');
+	var $amount = $('#amount');
+	var $chng = $('.chng');
 
 	var $ajax = $('a.ajax');
 	var $info = $('#info');
@@ -126,8 +130,18 @@ $(function(){
 
 	$radio.on('click',function(){
 		var $this = $(this);
+		var $this_value = $this.val();
 		$radio.parent().removeClass('selected');
 		$this.parent().addClass('selected');
+		$amount.html('Great, you chose to donate <strong>'+$this_value+'!</strong>').addClass('yep');
+		$chng.show();
+		$donate.addClass('yep').removeClass('init');
+		$details.removeClass('not-yet');
+	});
+
+	$chng.on('click',function(){
+		$donate.removeClass('yep');
+		$chng.hide();
 	});
 
 });

@@ -34,8 +34,9 @@
 						</label>
 					</fieldset>-->
 					<div class="payment">
-						<fieldset class="donate">
-							<h2>Choose a donation amount:</h2>
+						<h2 id="amount">Ready? Great, please <strong>choose a donation amount</strong>:</h2>
+						<span class="chng">Change?</span>
+						<fieldset id="donate" class="donate init">
 							<label for="d2">
 								$2
 								<input type="radio" name="donation_amount" id="d2" value="$2.00" />
@@ -53,52 +54,55 @@
 								<input type="radio" name="donation_amount" id="d10" value="$10.00" />
 							</label>
 						</fieldset>
-						<h2>Add your details:</h2>
-						<fieldset>
-							<label for="field1"><span>Name</span>
-								<input type="text" value="" name="field1" class="invalid" />
-							</label>
-							<small>use full name please; first [space] last</small>
-						</fieldset>
-						<fieldset>
-							<label for="field2"><span>Address</span>
-								<input type="text" value="" name="field2" class="invalid" />
-							</label>
-							<!--<small>comma separate values: street address</small>-->
-						</fieldset>
-						<fieldset class="m cf">
-							<div class="third">
-								<label for="field2"><span>City</span>
+						<div id="details" class="not-yet">
+							<h2>Now let&rsquo;s add your <strong>payment details</strong>:</h2>
+							<fieldset>
+								<label for="field1"><span>Name</span>
+									<input type="text" value="" name="field1" class="invalid" />
+								</label>
+								<small>use full name please; first [space] last</small>
+							</fieldset>
+							<fieldset>
+								<label for="field2"><span>Address</span>
 									<input type="text" value="" name="field2" class="invalid" />
 								</label>
-							</div>
-							<div class="third">
-								<label for="field2"><span>State</span>
-									<input type="text" value="" name="field2" class="invalid" />
+								<!--<small>comma separate values: street address</small>-->
+							</fieldset>
+							<fieldset class="m cf">
+								<div class="third">
+									<label for="field2"><span>City</span>
+										<input type="text" value="" name="field2" class="invalid" />
+									</label>
+								</div>
+								<div class="third">
+									<label for="field2"><span>State</span>
+										<input type="text" value="" name="field2" class="invalid" />
+									</label>
+								</div>
+								<div class="third">
+									<label for="field2"><span>Zip</span>
+										<input type="text" value="" name="field2" class="invalid" />
+									</label>
+								</div>
+							</fieldset>
+							<fieldset>
+								<label for="field3" class="n"><span>Card #</span>
+									<input type="text" value="" name="field3" class="invalid" />
 								</label>
-							</div>
-							<div class="third">
-								<label for="field2"><span>Zip</span>
-									<input type="text" value="" name="field2" class="invalid" />
+								<small>all numbers; no dashes or spaces please =)</small>
+							</fieldset>
+							<fieldset>
+								<label for="field3"><span>Expires</span>
+									<input type="text" value="" name="field3" class="invalid" />
 								</label>
-							</div>
-						</fieldset>
-						<fieldset>
-							<label for="field3" class="n"><span>Card #</span>
-								<input type="text" value="" name="field3" class="invalid" />
-							</label>
-							<small>all numbers; no dashes or spaces please =)</small>
-						</fieldset>
-						<fieldset>
-							<label for="field3"><span>Expires</span>
-								<input type="text" value="" name="field3" class="invalid" />
-							</label>
-							<small>use mm/yyyy format; 06/2013 for example</small>
-						</fieldset>
-						<fieldset>
-							<input type="submit" id="submit" value="And donate today!" />
-						</fieldset>
-						<small class="mouse">Some content about this form and the safety of this process.</small>
+								<small>use mm/yyyy format; 06/2013 for example</small>
+							</fieldset>
+							<fieldset>
+								<input type="submit" id="submit" value="And donate today!" />
+							</fieldset>
+							<small class="mouse">Some content about this form and the safety of this process.</small>
+						</div>
+
 					</div>
 				</form>
 			</div>
