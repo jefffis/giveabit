@@ -36,13 +36,13 @@ $(function(){
 	var $info_cls = $info.find('span');
 
 	$ajax.on('click',function(){
-		
+		return false;
 		var $this = $(this);
 		var $this_url = $this.attr('href');
 		$load.load($this_url);
 		$info.addClass('show');
 		//$.getScript('javascripts/application.js');
-		return false;
+		
 		
 	});
 
