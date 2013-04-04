@@ -107,6 +107,7 @@ header h2 a:after {
 	padding:0;
 	outline:5px solid rgba(255,255,255,0.2);
 	position:relative;
+	background:#00B7BF;
 }
 .main ul span {
 	position:absolute;
@@ -262,8 +263,8 @@ header h2 a:after {
 	left:1em;
 	top:.95em;
 	line-height:1.2;
-	opacity:.75;
-	border-right:5px solid #ccc;
+	opacity:.55;
+	/*border-right:5px solid #ccc;*/
 	width:70px;
 	text-align:left;
 }
@@ -284,6 +285,32 @@ input[type=text], input[type=submit] {
 	position:relative;
 	padding-left:100px;
 	text-align:left;
+}
+.main .third {
+	float:left;
+	width:47%;
+	margin:0 8px 0 0;
+	padding:0;
+	position:relative;
+}
+.third label span {
+	width:auto;
+	border:0;
+}
+.third + .third {
+	float:right;
+	padding:0;
+	margin:0;
+}
+.third + .third + .third {
+	clear:both;
+	float:left;
+	padding:0;
+	margin:15px 0 0;
+}
+.third input[type=text] {
+	padding:.75em 15px .75em 0;
+	text-align:right;
 }
 input[type=submit] {
 	text-align:center;
@@ -385,7 +412,7 @@ input[type=submit]:active {
 	display:block;
 }
 .half {
-	position:absolute;
+	position:fixed;
 	top:0;
 	left:0;
 	width:100%;
@@ -401,6 +428,25 @@ input[type=submit]:active {
 	filter:opacity(0.75);
 }
 
+@media screen and (min-width:32.5em){
+	.main .third, .third + .third {
+		float:left;
+		width:32%;
+		margin:0 8px 0 0;
+		padding:0 8px 0 0;
+		position:relative;
+	}
+	.third label span {
+		width:auto;
+		border:0;
+	}
+	.third + .third + .third {
+		clear:none;
+		float:right;
+		padding:0;
+		margin:0;
+	}
+}
 @media screen and (min-width:40em){
 	header, .main {
 		width:35em;
@@ -426,12 +472,12 @@ input[type=submit]:active {
 }
 
 @media screen and (min-height:35em){
-	body {
-		padding:0;
+	html {
+
 	}
-	.main ul {
+	/*.main ul {
 		background:#00B7BF;
-	}
+	}*/
 	.half {
 		height:53%;
 		box-shadow:0 -5px 0 rgba(0,0,0,0.1) inset;

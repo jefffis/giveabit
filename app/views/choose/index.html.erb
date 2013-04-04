@@ -46,12 +46,30 @@
 					<label for="field1"><span>Name</span>
 						<input type="text" value="" name="field1" class="invalid" />
 					</label>
+					<small>use full name please; first [space] last</small>
 				</fieldset>
 				<fieldset>
 					<label for="field2"><span>Address</span>
 						<input type="text" value="" name="field2" class="invalid" />
 					</label>
-					<small>comma separate values: street address, city, state, zip code</small>
+					<!--<small>comma separate values: street address</small>-->
+				</fieldset>
+				<fieldset class="m cf">
+					<div class="third">
+						<label for="field2"><span>City</span>
+							<input type="text" value="" name="field2" class="invalid" />
+						</label>
+					</div>
+					<div class="third">
+						<label for="field2"><span>State</span>
+							<input type="text" value="" name="field2" class="invalid" />
+						</label>
+					</div>
+					<div class="third">
+						<label for="field2"><span>Zip</span>
+							<input type="text" value="" name="field2" class="invalid" />
+						</label>
+					</div>
 				</fieldset>
 				<fieldset>
 					<label for="field3" class="n"><span>Card #</span>
@@ -63,6 +81,7 @@
 					<label for="field3"><span>Expires</span>
 						<input type="text" value="" name="field3" class="invalid" />
 					</label>
+					<small>use mm/yyyy format; 06/2013 for example</small>
 				</fieldset>
 				<fieldset>
 					<input type="submit" id="submit" value="Donate away!" />
