@@ -26,6 +26,24 @@ $(function(){
 	var $errors = '<h3>Please correct these errors first.</h3>';
 	var $radio = $('input[type=radio]');
 
+	var $ajax = $('a.ajax');
+	var $info = $('#info');
+	var $load = $('#load');
+	var $info_cls = $info.find('span');
+
+	$ajax.on('click',function(){
+		var $this = $(this);
+		var $this_url = $this.attr('href');
+		$load.load($this_url);
+		$info.addClass('show')
+		//$.getScript('javascripts/application.js');
+		return false;
+	});
+
+	$info_cls.on('click',function(){
+		$info.removeClass('show');
+	});
+
 	$select_span.on('click',function(){
 		$select.find('.intro').toggleClass('hide');
 		$select.toggleClass('show');
@@ -67,11 +85,14 @@ $(function(){
 
 	$submit.on('click',function(){
 		var $this = $(this);
-		if($input_invalid.length >= 1){
+		if($input_invalid.length > 0){
 			$('input.invalid').addClass('fix-me');
 			//var $show_errors = $this.parent().prepend($errors);
 			return false;
+		}else{
+			alert('fefe');
 		}
+		
 	});
 
 	$input.on('blur',function(){
