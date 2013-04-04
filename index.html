@@ -19,11 +19,11 @@
 			<div class="main" role="main">
 				<ul id="select">
 					<li data-intro="yes" class="selected intro">Choose a Charity:</li>
-					<li data-img="http://www.google.com/nonprofits/images/charity-water-large.jpg">Some Charity</li>
-					<li data-img="http://actok.org/wp-content/uploads/2012/10/Charity-Water-in-Ethiopia-Scribblybark.com_.au_.jpg">Charity Name</li>
-					<li data-img="http://www.google.com/nonprofits/images/charity-water-large.jpg">Another Charity</li>
-					<li data-img="http://diveintampabay.com/wp-content/uploads/2012/07/charity2.jpg">Ever More Charity</li>
-					<li data-img="http://rack.3.mshcdn.com/media/ZgkyMDEyLzEyLzIwL2Y3L2dpdmVjaGFyaXR5Ljk0YzY2LmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/a9aa7a20/73e/give-charity-donations.jpg">Donate to Me</li>
+					<li data-img="http://www.google.com/nonprofits/images/charity-water-large.jpg" data-url="details.html">Some Charity</li>
+					<li data-img="http://actok.org/wp-content/uploads/2012/10/Charity-Water-in-Ethiopia-Scribblybark.com_.au_.jpg" data-url="details.html">Charity Name</li>
+					<li data-img="http://www.google.com/nonprofits/images/charity-water-large.jpg" data-url="details.html">Another Charity</li>
+					<li data-img="http://diveintampabay.com/wp-content/uploads/2012/07/charity2.jpg" data-url="details.html">Ever More Charity</li>
+					<li data-img="http://rack.3.mshcdn.com/media/ZgkyMDEyLzEyLzIwL2Y3L2dpdmVjaGFyaXR5Ljk0YzY2LmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/a9aa7a20/73e/give-charity-donations.jpg" data-url="details.html">Donate to Me</li>
 					<span></span>
 				</ul>
 			</div>
@@ -31,7 +31,17 @@
 				<form action="" method="" id="payment" class="">
 					<div class="info">
 						<h2>Charity: <strong id="charity"></strong></h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, voluptatum inventore non earum sequi minus molestiae atque odit ipsum cumque! Alias nobis laborum rem ipsa tempore facilis asperiores. <a href="details.html" class="ajax">Read more about us here</a>.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, voluptatum inventore non earum sequi minus molestiae atque odit ipsum cumque! Alias nobis laborum rem ipsa tempore facilis asperiores. <a href="details.html" class="ajax" id="more">Read more about us here</a>.</p>
+						<div id="load" class="load">
+							<iframe height="300" src="http://www.youtube.com/embed/?showinfo=0&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+							<div class="showd">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, voluptatum inventore non earum sequi minus molestiae atque odit ipsum cumque! Alias nobis laborum rem ipsa tempore facilis asperiores.</p>
+								<h3>Lorem ipsum dolor sit amet</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, officia, veniam, error omnis quisquam sint quas nemo corrupti iste cum quasi quidem quibusdam hic ut voluptatem possimus vero tempora blanditiis! Nobis, officia, veniam, error omnis quisquam sint quas nemo corrupti iste cum quasi quidem quibusdam hic ut voluptatem possimus vero tempora blanditiis!</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, voluptatum inventore non earum sequi minus molestiae atque odit ipsum cumque! Alias nobis laborum rem ipsa tempore facilis asperiores.</p>
+								<span></span>
+							</div>
+						</div>
 					</div>
 					<!--<fieldset class="search">
 						<label for=""><span>Search for charities:</span>
@@ -113,21 +123,19 @@
 			</div>
 		</div>
 		<div class="half" id="half"></div>
-		<div id="info" class="c-info"><div id="load" class="load">
+		<!--<div id="info" class="c-info"><div id="load" class="load">
 			
 			<h2>Charity Name Here</h2>
-			<!--<img src="http://www.google.com/nonprofits/images/charity-water-large.jpg" />-->
+			
 			<iframe height="300" src="http://www.youtube.com/embed/?showinfo=0&wmode=transparent" frameborder="0" allowfullscreen></iframe>
 			<div class="showd">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, voluptatum inventore non earum sequi minus molestiae atque odit ipsum cumque! Alias nobis laborum rem ipsa tempore facilis asperiores.</p>
 				<h3>Lorem ipsum dolor sit amet</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, officia, veniam, error omnis quisquam sint quas nemo corrupti iste cum quasi quidem quibusdam hic ut voluptatem possimus vero tempora blanditiis! Nobis, officia, veniam, error omnis quisquam sint quas nemo corrupti iste cum quasi quidem quibusdam hic ut voluptatem possimus vero tempora blanditiis!</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, voluptatum inventore non earum sequi minus molestiae atque odit ipsum cumque! Alias nobis laborum rem ipsa tempore facilis asperiores.</p>
-				<!--<h3>Lorem ipsum dolor sit amet</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, officia, veniam, error omnis quisquam sint quas nemo corrupti iste cum quasi quidem quibusdam hic ut voluptatem possimus vero tempora blanditiis! Nobis, officia, veniam, error omnis quisquam sint quas nemo corrupti iste cum quasi quidem quibusdam hic ut voluptatem possimus vero tempora blanditiis!</p>-->
 			</div>
 
-		</div><span></span></div>
+		</div><span></span></div>-->
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script src="javascripts/application.js?body=1" type="text/javascript"></script>
 	</body>

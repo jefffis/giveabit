@@ -29,25 +29,26 @@ $(function(){
 	var $donate = $('#donate');
 	var $amount = $('#amount');
 	var $chng = $('.chng');
+	var $more = $('#more');
 
 	var $ajax = $('a.ajax');
 	var $info = $('#info');
 	var $load = $('#load');
-	var $info_cls = $info.find('span');
+	var $info_cls = $load.find('span');
 
 	$ajax.on('click',function(){
-		return false;
+		
 		var $this = $(this);
 		var $this_url = $this.attr('href');
-		$load.load($this_url);
-		$info.addClass('show');
+		$load.load($this_url).addClass('show');
+		//$info.addClass('show');
 		//$.getScript('javascripts/application.js');
-		
+		return false;
 		
 	});
 
 	$info_cls.on('click',function(){
-		$info.removeClass('show');
+		$load.removeClass('show');
 	});
 
 	$select_span.on('click',function(){
@@ -59,6 +60,7 @@ $(function(){
 		var $this = $(this);
 		var $this_charity = $this.text();
 		var $this_image = $this.data('img');
+		var $this_href = $this.data('url');
 		$select.find('.intro').toggleClass('hide');
 		if(!$select.hasClass('show')){
 			$select.addClass('show');
@@ -72,6 +74,7 @@ $(function(){
 		$this.addClass('selected');
 		$select.removeClass('show');
 		$half.css('background-image','url('+$this_image+')').addClass('show');
+		$more.attr('href',$this_href);
 		$charity.text($this_charity);
 		$payment.addClass('show');
 	});
