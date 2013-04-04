@@ -2,6 +2,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Giveabit</title>
 		<link href='http://fonts.googleapis.com/css?family=Oxygen:300,700' rel='stylesheet' type='text/css' />
 		<link href="stylesheets/application.css?body=1" media="all" rel="stylesheet" type="text/css" />
@@ -23,6 +26,8 @@
 					<li data-img="http://rack.3.mshcdn.com/media/ZgkyMDEyLzEyLzIwL2Y3L2dpdmVjaGFyaXR5Ljk0YzY2LmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/a9aa7a20/73e/give-charity-donations.jpg">Donate to Me</li>
 					<span></span>
 				</ul>
+			</div>
+			<div class="main form" role="main">
 				<form action="" method="" id="payment" class="">
 					<div class="info">
 						<h2>Charity: <strong id="charity"></strong></h2>
@@ -36,7 +41,7 @@
 					<div class="payment">
 						<h2 id="amount">Ready? Great, please <strong>choose a donation amount</strong>:</h2>
 						<span class="chng">Change?</span>
-						<fieldset id="donate" class="donate init">
+						<fieldset id="donate" class="donate clear init">
 							<label for="d2">
 								$2
 								<input type="radio" name="donation_amount" id="d2" value="$2.00" />
@@ -54,7 +59,7 @@
 								<input type="radio" name="donation_amount" id="d10" value="$10.00" />
 							</label>
 						</fieldset>
-						<div id="details" class="not-yet">
+						<div id="details" class="clear not-yet">
 							<h2>Now let&rsquo;s add your <strong>payment details</strong>:</h2>
 							<fieldset>
 								<label for="field1"><span>Name</span>
@@ -108,7 +113,21 @@
 			</div>
 		</div>
 		<div class="half" id="half"></div>
-		<div id="info" class="c-info"><div id="load"></div><span></span></div>
+		<div id="info" class="c-info"><div id="load" class="load">
+			
+			<h2>Charity Name Here</h2>
+			<!--<img src="http://www.google.com/nonprofits/images/charity-water-large.jpg" />-->
+			<iframe height="300" src="http://www.youtube.com/embed/?showinfo=0&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+			<div class="showd">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, voluptatum inventore non earum sequi minus molestiae atque odit ipsum cumque! Alias nobis laborum rem ipsa tempore facilis asperiores.</p>
+				<h3>Lorem ipsum dolor sit amet</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, officia, veniam, error omnis quisquam sint quas nemo corrupti iste cum quasi quidem quibusdam hic ut voluptatem possimus vero tempora blanditiis! Nobis, officia, veniam, error omnis quisquam sint quas nemo corrupti iste cum quasi quidem quibusdam hic ut voluptatem possimus vero tempora blanditiis!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, voluptatum inventore non earum sequi minus molestiae atque odit ipsum cumque! Alias nobis laborum rem ipsa tempore facilis asperiores.</p>
+				<!--<h3>Lorem ipsum dolor sit amet</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, officia, veniam, error omnis quisquam sint quas nemo corrupti iste cum quasi quidem quibusdam hic ut voluptatem possimus vero tempora blanditiis! Nobis, officia, veniam, error omnis quisquam sint quas nemo corrupti iste cum quasi quidem quibusdam hic ut voluptatem possimus vero tempora blanditiis!</p>-->
+			</div>
+
+		</div><span></span></div>
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script src="javascripts/application.js?body=1" type="text/javascript"></script>
 	</body>

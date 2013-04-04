@@ -36,12 +36,14 @@ $(function(){
 	var $info_cls = $info.find('span');
 
 	$ajax.on('click',function(){
+		
 		var $this = $(this);
 		var $this_url = $this.attr('href');
 		$load.load($this_url);
-		$info.addClass('show')
+		$info.addClass('show');
 		//$.getScript('javascripts/application.js');
 		return false;
+		
 	});
 
 	$info_cls.on('click',function(){
@@ -134,14 +136,15 @@ $(function(){
 		$radio.parent().removeClass('selected');
 		$this.parent().addClass('selected');
 		$amount.html('Great, you chose to donate <strong>'+$this_value+'!</strong>').addClass('yep');
-		$chng.show();
+		$chng.addClass('yep');
 		$donate.addClass('yep').removeClass('init');
 		$details.removeClass('not-yet');
 	});
 
 	$chng.on('click',function(){
-		$donate.removeClass('yep');
-		$chng.hide();
+		$details.addClass('not-yet');
+		$donate.removeClass('yep').addClass('init');
+		$chng.removeClass('yep');
 	});
 
 });
