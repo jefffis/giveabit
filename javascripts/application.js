@@ -34,13 +34,14 @@ $(function(){
 	var $ajax = $('a.ajax');
 	var $info = $('#info');
 	var $load = $('#load');
-	var $info_cls = $load.find('span');
+	var $info_cls = $load.next('span');
 
 	$ajax.on('click',function(){
 		
 		var $this = $(this);
 		var $this_url = $this.attr('href');
 		$load.load($this_url).addClass('show');
+		$info_cls.addClass('show');
 		//$info.addClass('show');
 		//$.getScript('javascripts/application.js');
 		return false;
@@ -49,6 +50,7 @@ $(function(){
 
 	$info_cls.on('click',function(){
 		$load.removeClass('show');
+		$info_cls.removeClass('show');
 	});
 
 	$select_span.on('click',function(){

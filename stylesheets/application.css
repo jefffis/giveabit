@@ -509,19 +509,23 @@ span.chng:active {
 .main div.load.show {
 	display:block;
 }
-.main div.load span {
+.main .cls {
 	font-size:2em;	
 	opacity:.5;
 	cursor:pointer;
 	display:block;
 	margin:.5em auto 0;
 	text-align:center;
+	display:none;
 }
-.main div.load span:after {
+.main .cls:after {
 	content:"\2717";
 }
-.main div.load span:active {
+.main .cls:active {
 	opacity:.2;
+}
+.main .cls.show {
+	display:block;
 }
 
 .load iframe {
