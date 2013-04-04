@@ -36,8 +36,8 @@ $(function(){
 	var $load = $('#load');
 	var $info_cls = $load.next('span');
 
-	$ajax.on('click',function(){
-		
+	$ajax.on('click',function(e){
+		//e.preventDefault();
 		var $this = $(this);
 		var $this_url = $this.attr('href');
 		$load.load($this_url).addClass('show');
@@ -45,7 +45,6 @@ $(function(){
 		//$info.addClass('show');
 		//$.getScript('javascripts/application.js');
 		return false;
-		
 	});
 
 	$info_cls.on('click',function(){
