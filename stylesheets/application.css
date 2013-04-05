@@ -191,10 +191,14 @@ header img {
 	
 }
 .main.intro p {
-	color:rgba(255,255,255,0.75);
+	color:rgba(255,255,255,0.8);
 	margin-bottom:1.25em;
 }
 .main.intro strong {
+	color:white;
+}
+.main.intro em {
+	font-weight:bold;
 	color:white;
 }
 
@@ -496,11 +500,11 @@ input[type=submit]:active {
 }*/
 
 fieldset.donate.init {
-	margin:0 0 .3em;
+	margin:0 0 -.3em;
 }
 .donate label {
 	float:left;
-	margin:0 .75em 0 0;
+	margin:0 .75em .75em 0;
 	display:inline-block;
 	background:#E9A900;
 	color:white;
@@ -566,9 +570,10 @@ span.chng:active {
 	display:table;
 }
 .half.show {
-	-webkit-filter:opacity(0.75);
+	/*-webkit-filter:opacity(0.75);
 	-moz-filter:opacity(0.75);
-	filter:opacity(0.75);
+	filter:opacity(0.75);*/
+	opacity:.75;
 }
 .w .half {
 	height:20%;

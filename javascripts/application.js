@@ -27,6 +27,7 @@ $(function(){
 	var $radio = $('input[type=radio]');
 	var $details = $('#details');
 	var $donate = $('#donate');
+	var $donate_label = $donate.find('label');
 	var $amount = $('#amount');
 	var $chng = $('.chng');
 	var $more = $('#more');
@@ -55,6 +56,13 @@ $(function(){
 		//$info.addClass('show');
 		//$.getScript('javascripts/application.js');
 		return false;
+	});
+
+	$donate_label.on('click',function(){
+		var $this = $(this);
+		var $this_radio = $this.find('input');
+		$this_radio.attr('checked',true);
+		//alert(typeof $this_radio);
 	});
 
 	$info_cls.on('click',function(){
