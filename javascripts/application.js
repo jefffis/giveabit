@@ -34,13 +34,23 @@ $(function(){
 	var $ajax = $('a.ajax');
 	var $info = $('#info');
 	var $load = $('#load');
+	var $loader = $('<h3 id="loader" class="loader">Loading&hellip;</h3>');
 	var $info_cls = $load.next('span');
+
+	var $header_link = $('header a');
+
+	$header_link.on('click',function(){
+		return false;
+	});
 
 	$ajax.on('click',function(e){
 		//e.preventDefault();
 		var $this = $(this);
 		var $this_url = $this.attr('href');
-		$load.load($this_url).addClass('show');
+		$load.html($loader);
+		$load.load($this_url, function(){
+			$load.find($loader).remove();
+		}).addClass('show');
 		$info_cls.addClass('show');
 		//$info.addClass('show');
 		//$.getScript('javascripts/application.js');
@@ -77,6 +87,8 @@ $(function(){
 		$half.css('background-image','url('+$this_image+')').addClass('show');
 		$more.attr('href',$this_href);
 		$charity.text($this_charity);
+		$load.removeClass('show');
+		$info_cls.removeClass('show');
 		$payment.addClass('show');
 	});
 

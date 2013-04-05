@@ -52,7 +52,7 @@ body {
 	width:100%;
 	height:100%;
 	display:table;
-	padding:2em 0 0;
+	padding:2em 0;
 }
 .w body {
 	display:block;
@@ -635,6 +635,13 @@ span.chng:active {
 .main div.load * {
 	margin:1em 0 .65em;
 	color:#333;
+}
+.main div.load h3 {
+	text-align: center;
+	color: #E9A900;
+	text-transform: uppercase;
+	margin: 1em 0;
+	font-size: 1em;
 }
 .main div.load p {
 	font-size:80%;
