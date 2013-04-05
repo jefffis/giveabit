@@ -12,6 +12,20 @@
 //
 
 $(function(){
+
+var supportsTransitions  = (function() {
+    var s = document.createElement('div').style, // 's' for style. better to create an element if body yet to exist
+        v = ['ms','O','Moz','Webkit']; // 'v' for vendor
+
+    if( s['transition'] == '' ) return true; // check first for prefeixed-free support
+    while( v.length ) // now go over the list of vendor prefixes and check support until one is found
+        if( v.pop() + 'Transition' in s )
+            return true;
+    return false;
+})();
+
+//console.log(supportsTransitions);
+
 	var $search = $('#search');
 	var $select = $('#select');
 	var $selects = $('#select').find('li');
@@ -78,6 +92,8 @@ $(function(){
 
 		setTimeout(function(){
 			window.location = $url;
+			//$('body').load($url+' #wrap');
+			//$.getScript('javascripts/application.js');
 		}, 500);
 		
 		//return false;
