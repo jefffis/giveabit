@@ -38,13 +38,15 @@ $(function(){
 	var $loader = $('<h3 id="loader" class="loader">Loading&hellip;</h3>');
 	var $info_cls = $load.next('span');
 
+	var $outro = $('a.outro');
+
 	var $header_link = $('header a');
 
 	$header_link.on('click',function(){
 		return false;
 	});
 
-	$ajax.on('click',function(e){
+	$ajax.on('click',function(){
 		//e.preventDefault();
 		var $this = $(this);
 		var $this_url = $this.attr('href');
@@ -56,6 +58,29 @@ $(function(){
 		//$info.addClass('show');
 		//$.getScript('javascripts/application.js');
 		return false;
+	});
+
+	$outro.on('click',function(e){
+
+		e.preventDefault();
+		
+		var $this = $(this);
+		var $this_url = $this.attr('href');
+		var $url = $this_url;
+		
+		var $header = $('header');
+		var $main = $('#main');
+
+		setTimeout(function(){
+			$header.addClass('out');
+			$main.addClass('out');
+		}, 10);
+
+		setTimeout(function(){
+			window.location = $url;
+		}, 500);
+		
+		//return false;
 	});
 
 	$donate_label.on('click',function(){

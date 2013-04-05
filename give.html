@@ -10,7 +10,7 @@
 		<meta content="authenticity_token" name="csrf-param" />
 		<meta content="0Z7wPy6+yt4PJuf1r1IzQGf6ZHA3IZwWyvgyGDN2RoI=" name="csrf-token" />
 	</head>
-	<body>
+	<body class="g" onload="fade_in()">
 		<div class="wrap">
 			<header>
 				<h2><a href="">Giveab<span>.it</span></a></h2>
@@ -141,5 +141,10 @@
 		</div><span></span></div>-->
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script src="javascripts/application.js?body=1" type="text/javascript"></script>
+	<script>
+	function fade_in() {
+		$('body').fadeIn(400).removeClass('g').css('display','table');
+	}
+	</script>
 	</body>
 </html>

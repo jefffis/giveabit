@@ -54,6 +54,9 @@ body {
 	display:table;
 	padding:2em 0;
 }
+.g {
+	display:none;
+}
 .w body {
 	display:block;
 }
@@ -101,6 +104,19 @@ header, .main {
 .w header {
 	padding:0;
 	position:relative;
+}
+.w header.out {
+	-webkit-transition:all .5s ease-in-out;
+	-moz-transition:all .5s ease-in-out;
+	transition:all .5s ease-in-out;
+	left:-1000%;
+}
+.w .main.intro.out {
+	position:relative;
+	-webkit-transition:all 1s ease-in-out;
+	-moz-transition:all 1s ease-in-out;
+	transition:all 1s ease-in-out;
+	left:-1000%;
 }
 .main.form {
 	padding:0;
