@@ -38,6 +38,7 @@ var supportsTransitions  = (function() {
 	var $half = $('#half');
 	var $input = $('input[type=text]');
 	var $input_invalid = $('input.invalid');
+	//var $input_invalid_val = $input_invalid.val();
 	var $input_cc = $('.n input');
 	var $submit = $('#submit');
 	var $errors = '<h3>Please correct these errors first.</h3>';
@@ -64,6 +65,10 @@ var supportsTransitions  = (function() {
 	$header_link.on('click',function(){
 		return false;
 	});
+
+	/*if($input_invalid.val()!=''){
+		$input_invalid.removeClass('input');
+	}*/
 
 	$ajax.on('click',function(){
 		//e.preventDefault();
@@ -176,6 +181,7 @@ var supportsTransitions  = (function() {
 		if($this.val()!=''){
 			$this.removeClass('fix-me invalid').addClass('good');
 		}
+		console.log($('.invalid').length);
 		/*if($input_invalid.length <= 0){
 			alert('better');
 			//$show_errors.remove();
@@ -284,9 +290,10 @@ var supportsTransitions  = (function() {
 
     $submit.on('click',function(){
     	var $this = $(this);
-		if($input_invalid){
+		if($('.invalid').length>=1){
 			$('input.invalid').addClass('fix-me');
 			$('input.invalid:first').focus();
+			//console.log($('.invalid').length);
 			return false;
 		}else{
 			submit('#submit-donation');
