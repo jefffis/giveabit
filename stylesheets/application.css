@@ -702,6 +702,29 @@ span.chng:active {
 	font-size:80%;
 }
 
+/*** noscript ***/
+html.no-js {
+	overflow:hidden;
+}
+.no-wrap {
+	display:table;
+	height:100%;
+	width:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,0.75);
+	z-index:10;
+}
+.no-wrap .c {
+	display:table-cell;
+	text-align:center;
+	height:100%;
+	width:100%;
+	vertical-align:middle;
+	padding:0 2em;
+}
+
 @media screen and (min-width:32.5em){
 	.main .third, .third + .third {
 		float:left;
@@ -722,6 +745,10 @@ span.chng:active {
 	}
 	header figcaption {
 		font-size:1.5em;
+	}
+	.no-wrap .c > div {
+		width:30em;
+		margin:0 auto;
 	}
 }
 @media screen and (min-width:40em){

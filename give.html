@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
@@ -27,7 +27,7 @@
 				</ul>
 			</div>
 			<div class="main form">
-				<form action="" method="" id="payment" class="">
+				<form action="" method="" id="payment" class="" id="submit-donation">
 					<div class="info">
 						<h2>Charity: <strong id="charity"></strong></h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, voluptatum inventore non earum sequi minus molestiae atque odit ipsum cumque! Alias nobis laborum rem ipsa tempore facilis asperiores. <a href="details.html" class="ajax" id="more">Read more about us here</a>.</p>
@@ -45,81 +45,97 @@
 						<fieldset id="donate" class="donate clear init">
 							<label for="d2">
 								$2
-								<input type="radio" name="donation_amount" id="d2" value="$2.00" />
+								<input type="radio" name="donation_amount" id="d2" value="$2.00" class="invalid required" />
 							</label>
 							<label for="d3">
 								$3
-								<input type="radio" name="donation_amount" id="d3" value="$3.00" />
+								<input type="radio" name="donation_amount" id="d3" value="$3.00" class="invalid required" />
 							</label>
 							<label for="d5">
 								$5
-								<input type="radio" name="donation_amount" id="d5" value="$5.00" />
+								<input type="radio" name="donation_amount" id="d5" value="$5.00" class="invalid required" />
 							</label>
 							<label for="d10">
 								$10
-								<input type="radio" name="donation_amount" id="d10" value="$10.00" />
+								<input type="radio" name="donation_amount" id="d10" value="$10.00" class="invalid required" />
 							</label>
 							<label for="d15">
 								$15
-								<input type="radio" name="donation_amount" id="d15" value="$15.00" />
+								<input type="radio" name="donation_amount" id="d15" value="$15.00" class="invalid required" />
 							</label>
 							<label for="d20">
 								$20
-								<input type="radio" name="donation_amount" id="d20" value="$20.00" />
+								<input type="radio" name="donation_amount" id="d20" value="$20.00" class="invalid required" />
 							</label>
 							<label for="d25">
 								$25
-								<input type="radio" name="donation_amount" id="d25" value="$25.00" />
+								<input type="radio" name="donation_amount" id="d25" value="$25.00" class="invalid required" />
 							</label>
 						</fieldset>
 						<div id="details" class="clear not-yet">
 							<h2>Now let&rsquo;s add your <strong>payment details</strong>:</h2>
 							<fieldset>
 								<label for="field1"><span>Name</span>
-									<input type="text" value="" name="field1" class="invalid" />
+									<input type="text" value="" id="name" name="name" class="invalid required" />
 								</label>
 								<small>use full name please; first [space] last</small>
 							</fieldset>
 							<fieldset>
-								<label for="field2"><span>Address</span>
-									<input type="text" value="" name="field2" class="invalid" />
+								<label for="address"><span>Address</span>
+									<input type="text" value="" id="address" name="address" class="invalid required" />
 								</label>
 								<!--<small>comma separate values: street address</small>-->
 							</fieldset>
 							<fieldset class="m cf">
 								<div class="third">
-									<label for="field2"><span>City</span>
-										<input type="text" value="" name="field2" class="invalid" />
+									<label for="city"><span>City</span>
+										<input type="text" value="" id="city" name="city" class="invalid required" />
 									</label>
 								</div>
 								<div class="third">
-									<label for="field2"><span>State</span>
-										<input type="text" value="" name="field2" class="invalid" />
+									<label for="state"><span>State</span>
+										<input type="text" value="" id="state" name="state" class="invalid required" />
 									</label>
 								</div>
 								<div class="third">
-									<label for="field2"><span>Zip</span>
-										<input type="text" value="" name="field2" class="invalid" />
+									<label for="zip"><span>Zip</span>
+										<input type="text" value="" id="zip" name="zip" class="invalid required" />
 									</label>
 								</div>
 							</fieldset>
 							<fieldset>
-								<label for="field3" class="n"><span>Card #</span>
-									<input type="text" value="" name="field3" class="invalid" />
+								<label for="card-number" class="n"><span>Card #</span>
+									<input type="text" value="" id="card-number" name="card-number" class="invalid card-number required" />
 								</label>
 								<small>all numbers; no dashes or spaces please =)</small>
 							</fieldset>
-							<fieldset>
-								<label for="field3"><span>Expires</span>
-									<input type="text" value="" name="field3" class="invalid" />
-								</label>
-								<small>use mm/yyyy format; 06/2013 for example</small>
+							<fieldset class="m cf">
+								<div class="third">
+									<label for="card-month"><span>Expires MM</span>
+										<input type="text" value="" id="card-month" name="card-month" class="invalid card-expiry-month stripe-sensitive required" />
+									</label>
+									<small>Month in MM format</small>
+								</div>
+								<div class="third">
+									<label for="card-year"><span>Expires YY</span>
+										<input type="text" value="" id="card-year" name="card-year" class="invalid card-expiry-year stripe-sensitive required" />
+									</label>
+									<small>Year in YY format</small>
+								</div>
+								<div class="third">
+									<label for="cvc"><span>CVC</span>
+										<input type="text" value="" id="cvc" name="cvc" class="invalid card-cvc required" />
+									</label>
+									<small>3- or 4-digit code on the back of your card</small>
+								</div>
 							</fieldset>
 							<fieldset>
 								<input type="submit" id="submit" value="And donate away!" />
 							</fieldset>
 							<small class="mouse">Some content about this form and the safety of this process.</small>
 						</div>
+
+						<span class="payment-errors"></span>
 
 					</div>
 				</form>
@@ -139,12 +155,18 @@
 			</div>
 
 		</div><span></span></div>-->
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
-	<script src="javascripts/application.js?body=1" type="text/javascript"></script>
 	<script>
-	function fade_in() {
+	function fade_in(){
 		$('body').fadeIn(400).removeClass('g').css('display','table');
 	}
 	</script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="https://js.stripe.com/v1/"></script>
+	<script src="javascripts/application.js?body=1" type="text/javascript"></script>
+	<!--<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.8.1/jquery.validate.min.js"></script>-->
+	<!--<script>
+	//addInputNames();
+	//submit();
+	</script>-->
 	</body>
 </html>

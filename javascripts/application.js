@@ -11,6 +11,8 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 
+Stripe.setPublishableKey('pk_YOUR_PUBLISHABLE_KEY');
+
 $(function(){
 
 var supportsTransitions  = (function() {
@@ -26,6 +28,7 @@ var supportsTransitions  = (function() {
 
 //console.log(supportsTransitions);
 
+	var $html = $('html');
 	var $search = $('#search');
 	var $select = $('#select');
 	var $selects = $('#select').find('li');
@@ -55,6 +58,8 @@ var supportsTransitions  = (function() {
 	var $outro = $('a.outro');
 
 	var $header_link = $('header a');
+
+	$html.removeClass('no-js');
 
 	$header_link.on('click',function(){
 		return false;
@@ -154,7 +159,7 @@ var supportsTransitions  = (function() {
 		$this.addClass('show');
 	});
 
-	$submit.on('click',function(){
+	/*$submit.on('click',function(){
 		var $this = $(this);
 		if($input_invalid.length > 0){
 			$('input.invalid').addClass('fix-me');
@@ -164,7 +169,7 @@ var supportsTransitions  = (function() {
 			alert('fefe');
 		}
 		
-	});
+	});*/
 
 	$input.on('blur',function(){
 		var $this = $(this);
@@ -199,6 +204,7 @@ var supportsTransitions  = (function() {
 		var $this = $(this);
 		var $this_value = $this.val();
 		$radio.parent().removeClass('selected');
+		$radio.removeClass('invalid');
 		$this.parent().addClass('selected');
 		$amount.html('Great, you chose to donate <strong>'+$this_value+'!</strong>').addClass('yep');
 		$chng.addClass('yep');
@@ -211,5 +217,106 @@ var supportsTransitions  = (function() {
 		$donate.removeClass('yep').addClass('init');
 		$chng.removeClass('yep');
 	});
+
+	/*$submit.on('click',function(){
+		var $this = $(this);
+		if($input_invalid){
+			$('input.invalid').addClass('fix-me');
+			$('input.invalid:first').focus();
+		}
+		return false;		
+	});*/
+
+	/*function addInputNames() {
+        // Not ideal, but jQuery's validate plugin requires fields to have names
+        // so we add them at the last possible minute, in case any javascript 
+        // exceptions have caused other parts of the script to fail.
+        $(".card-number").attr("name", "card-number")
+        $(".card-cvc").attr("name", "card-cvc")
+        $(".card-expiry-year").attr("name", "card-expiry-year")
+    }*/
+
+    function removeInputNames() {
+        $(".card-number").removeAttr("name")
+        $(".card-cvc").removeAttr("name")
+        $(".card-expiry-year").removeAttr("name")
+    }
+
+    function submit(form) {
+        // remove the input field names for security
+        // we do this *before* anything else which might throw an exception
+        removeInputNames(); // THIS IS IMPORTANT!
+
+        // given a valid form, submit the payment details to stripe
+        $submit.attr("disabled", "disabled");
+
+        Stripe.createToken({
+            number: $('.card-number').val(),
+            cvc: $('.card-cvc').val(),
+            exp_month: $('.card-expiry-month').val(), 
+            exp_year: $('.card-expiry-year').val()
+        }, function(status, response) {
+            if (response.error) {
+                // re-enable the submit button
+                $('#submit').removeAttr("disabled")
+
+                // show the error
+                $(".payment-errors").html(response.error.message);
+                
+                // we add these names back in so we can revalidate properly
+                addInputNames();
+
+            } else {
+                // token contains id, last4, and card type
+                var token = response['id'];
+
+                // insert the stripe token
+                var input = $("<input name='stripeToken' value='" + token + "' style='display:none;' />");
+                form.appendChild(input[0])
+
+                // and submit
+                form.submit();
+            }
+        });
+        
+        return false;
+    }
+
+    $submit.on('click',function(){
+    	var $this = $(this);
+		if($input_invalid){
+			$('input.invalid').addClass('fix-me');
+			$('input.invalid:first').focus();
+			return false;
+		}else{
+			submit('#submit-donation');
+		}
+    });
+    
+    // add custom rules for credit card validating
+    /*$.validator.addMethod("cardNumber", Stripe.validateCardNumber, "Please enter a valid card number");
+    $.validator.addMethod("cardCVC", Stripe.validateCVC, "Please enter a valid security code");
+    $.validator.addMethod("cardExpiry", function() {
+        return Stripe.validateExpiry($(".card-expiry-month").val(), 
+                                     $(".card-expiry-year").val())
+    }, "Please enter a valid expiration");*/
+
+    // We use the jQuery validate plugin to validate required params on submit
+    /*$("#submit-donation").validate({
+        submitHandler: submit,
+        rules: {
+            "card-cvc" : {
+                cardCVC: true,
+                required: true
+            },
+            "card-number" : {
+                cardNumber: true,
+                required: true
+            },
+            "card-expiry-year" : "cardExpiry" // we don't validate month separately
+        }
+    });*/
+
+    // adding the input field names is the last step, in case an earlier step errors
 
 });
