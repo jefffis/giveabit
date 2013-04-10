@@ -11,7 +11,7 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 
-Stripe.setPublishableKey('pk_YOUR_PUBLISHABLE_KEY');
+//Stripe.setPublishableKey('pk_YOUR_PUBLISHABLE_KEY');
 
 $(function(){
 
