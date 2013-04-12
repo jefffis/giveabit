@@ -224,14 +224,14 @@ var supportsTransitions  = (function() {
 		$chng.removeClass('yep');
 	});
 
-	/*$submit.on('click',function(){
+	$submit.on('click',function(){
 		var $this = $(this);
 		if($input_invalid){
 			$('input.invalid').addClass('fix-me');
 			$('input.invalid:first').focus();
 		}
 		return false;		
-	});*/
+	});
 
 	/*function addInputNames() {
         // Not ideal, but jQuery's validate plugin requires fields to have names
