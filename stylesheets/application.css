@@ -238,7 +238,7 @@ header img {
 	padding:2em;
 }
 .main.intro h1 {
-	
+	font-size:1.75em;
 }
 .main.intro p {
 	color:rgba(255,255,255,0.8);
@@ -749,6 +749,9 @@ html.no-js {
 	.no-wrap .c > div {
 		width:30em;
 		margin:0 auto;
+	}
+	.main.intro h1 {
+		font-size:2.5em;
 	}
 }
 @media screen and (min-width:40em){
