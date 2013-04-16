@@ -54,9 +54,9 @@ body {
 	display:table;
 	padding:2em 0;
 }
-.g {
+/*.g {
 	display:none;
-}
+}*/
 .w body {
 	display:block;
 }
@@ -135,6 +135,33 @@ header, .main {
   }
 }
 
+@-webkit-keyframes move-in {
+  0% {
+     -webkit-transform: translate(-250%, 0);
+     opacity:0;
+  }
+  100% {
+     -webkit-transform: translate(0, 0);
+     opacity:1;
+  }
+}
+@-moz-keyframes move-in {
+  0% {
+     -moz-transform: translate(-250%, 0);
+  }
+  100% {
+     -moz-transform: translate(0, 0);
+  }
+}
+@keyframes move-in {
+  0% {
+     transform: translate(-250%, 0);
+  }
+  100% {
+     transform: translate(0, 0);
+  }
+}
+
 .w header.out {
 	-webkit-transform: translate(-1000%, 0);
 	-moz-transform: translate(-1000%, 0);
@@ -152,6 +179,18 @@ header, .main {
 	animation: move .85s ease-in-out 1;
 }
 
+.g .wrap {
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	transform: translate(0, 0);
+	-webkit-animation: move-in .75s ease-in 1;
+	-moz-animation: move-in .65s ease-in 1;
+	animation: move-in .65s ease-in 1;
+	opacity:1;
+	position:relative;
+	z-index:100;
+}
+
 .main.form {
 	padding:0;
 }
@@ -164,8 +203,44 @@ header, header * {
 header h2 {
 	margin:0 0 .75em;
 }
+header h2 img {
+	max-width:22px;
+	/*width:60px;
+	padding:.35em .5em;*/
+	display:inline;
+	position:relative;
+	top:.075em;
+	left:.1em;
+	/*left:-.25em;*/
+	-webkit-filter:drop-shadow(0 2px 0 rgba(0,0,0,0.125));
+	-moz-filter:drop-shadow(0 2px 0 rgba(0,0,0,0.125));
+	filter:drop-shadow(0 2px 0 rgba(0,0,0,0.125));
+	/*background:rgba(0,0,0,0.2);
+	border-radius:100%;*/
+}
+/*@-webkit-keyframes wave {
+	to {
+		-webkit-transform:rotate(-360deg);
+	}
+}
+@-moz-keyframes wave {
+	to {
+		-moz-transform:rotate(-360deg);
+	}
+}
+@keyframes wave {
+	to {
+		transform:rotate(-360deg);
+	}
+}
+header h2:hover img {
+	-webkit-animation: wave .75s ease-in-out 1;
+	-moz-animation: wave .75s ease-in-out 1;
+	animation: wave .75s ease-in-out 1;
+}*/
 header h2 span {
 	font-weight:100;
+	opacity:.65;
 }
 /*header h2 a:after {
 	content:"\00A2";
@@ -195,7 +270,7 @@ header figcaption {
 	width:100%;
 	text-align:center;
 	bottom:0;
-	padding:1em;
+	padding:1em 1.5em;
 	background:#E9A900;
 	font-size:1em;
 }
