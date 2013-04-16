@@ -101,9 +101,10 @@ var supportsTransitions  = (function() {
 		}, 10);
 
 		setTimeout(function(){
-			window.location = $url;
-			//$('body').load($url+' #wrap');
-			//$.getScript('javascripts/application.js');
+			//window.location = $url;
+			$('body').load($url+' #wrap');
+			$.getScript('javascripts/application.js');
+			$.getScript('https://js.stripe.com/v1/');
 		}, 500);
 		
 		//return false;
