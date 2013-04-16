@@ -166,27 +166,27 @@ header, .main {
 	-webkit-transform: translate(-1000%, 0);
 	-moz-transform: translate(-1000%, 0);
 	transform: translate(-1000%, 0);
-	-webkit-animation: move .65s ease-in-out 1;
-	-moz-animation: move .5s ease-in-out 1;
-	animation: move .5s ease-in-out 1;
+	-webkit-animation: move .75s ease-in-out 1;
+	-moz-animation: move .65s ease-in-out 1;
+	animation: move .65s ease-in-out 1;
 }
 .w .main.intro.out {
 	-webkit-transform: translate(-1000%, 0);
 	-moz-transform: translate(-1000%, 0);
 	transform: translate(-1000%, 0);
 	-webkit-animation: move 1s ease-in-out 1;
-	-moz-animation: move .75s ease-in-out 1;
-	animation: move .75s ease-in-out 1;
+	-moz-animation: move .85s ease-in-out 1;
+	animation: move .85s ease-in-out 1;
 }
 
-.wrap {
-	-webkit-transform: translate(0, 0);
+.g.wrap {
+	/*-webkit-transform: translate(0, 0);
 	-moz-transform: translate(0, 0);
 	transform: translate(0, 0);
-	-webkit-animation: move-in .65s ease-in 1;
-	-moz-animation: move-in .5s ease-in 1;
-	animation: move-in .5s ease-in 1;
-	opacity:1;
+	-webkit-animation: move-in .75s ease-in 1;
+	-moz-animation: move-in .65s ease-in 1;
+	animation: move-in .65s ease-in 1;
+	opacity:1;*/
 	position:relative;
 	z-index:100;
 }
@@ -240,8 +240,8 @@ header h2:hover img {
 	animation: wave .75s ease-in-out 1;
 }*/
 header h2 span {
-	font-weight:300;
-	color:rgba(255,255,255,.65);
+	font-weight:100;
+	opacity:.65;
 }
 /*header h2 a:after {
 	content:"\00A2";
@@ -408,16 +408,6 @@ header img {
 	text-align:center;
 	margin:2em 0;
 	outline:5px solid rgba(255,255,255,0.2);
-}
-.w .main.form a:link, .w .main.form a:visited {
-	color:#E9A900;
-	font-weight:bold;
-	display:inline;
-	outline:none;
-	text-decoration:underline;
-	text-align:left;
-	background:none;
-	padding:0;
 }
 .main li.selected, .main .show li {
 	display:list-item;
