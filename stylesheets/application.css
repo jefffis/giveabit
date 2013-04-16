@@ -179,7 +179,7 @@ header, .main {
 	animation: move .75s ease-in-out 1;
 }
 
-.g.wrap {
+.wrap {
 	-webkit-transform: translate(0, 0);
 	-moz-transform: translate(0, 0);
 	transform: translate(0, 0);
