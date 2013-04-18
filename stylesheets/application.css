@@ -48,19 +48,22 @@ html {
 	text-shadow:0 1px 0 rgba(0,0,0,0.075), 0 2px 1px rgba(0,0,0,0.075), 0 3px 2px rgba(0,0,0,0.05);
 	-webkit-backface-visibility:hidden;
 }
-body {
+body, .g {
 	width:100%;
 	height:100%;
-	display:table;
+	/*display:table;*/
 	padding:2em 0;
 }
-/*.g {
+.g {
 	display:none;
-}*/
-.w body {
+}
+.g.s {
+	display:table;
+}
+.w {
 	display:block;
 }
-.wrap {
+.g .wrap {
 	width:100%;
 	height:100%;
 	display:table-cell;

@@ -57,8 +57,9 @@ var supportsTransitions  = (function() {
 		var $this_url = $this.attr('href');
 		var $url = $this_url;
 		
-		var $header = $('header');
-		var $main = $('#main');
+		var $header = $('.w header');
+		var $main = $('.w #main');
+		//var $header = $('.w header');
 
 		$('html,body').animate({scrollTop: 0});
 
@@ -68,7 +69,10 @@ var supportsTransitions  = (function() {
 		}, 10);
 
 		setTimeout(function(){
-			window.location = $url;
+			$header.hide();
+			$main.hide();
+			$('.g').addClass('s');
+			//window.location = $url;
 			//$('body').html('').load($url+' #wrap').after('<div class="half" id="half"></div>');
 			//$.getScript('javascripts/ajaxload.js');
 			//$.getScript('https://js.stripe.com/v1/');
@@ -131,6 +135,7 @@ var supportsTransitions  = (function() {
 		$load.removeClass('show');
 		$info_cls.removeClass('show');
 		$payment.addClass('show');
+		$.getScript('https://js.stripe.com/v1/');
 	});
 
 	$search.on('focus',function(){
